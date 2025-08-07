@@ -67,7 +67,7 @@ async function lanzarBrowser() {
     try {
       console.log('Intentando lanzar browser...');
       return await puppeteer.launch({
-        headless: true,
+        headless: "new",
         defaultViewport: null,
         ...config
       });
